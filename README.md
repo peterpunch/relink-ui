@@ -127,11 +127,6 @@ We welcome contributions! If you'd like to contribute:
 
 ---
 
-## License
-This project is licensed under the **MIT License**. For more details, please see the `LICENSE` file.
-
----
-
 ## Acknowledgments
 - Gratitude to the developers of the tools and libraries used in this project.
 - This project reflects best practices in modern web application development.
