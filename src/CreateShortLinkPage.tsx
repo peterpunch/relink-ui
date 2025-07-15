@@ -32,6 +32,7 @@ export default function CreateShortLinkPage(): ReactElement {
     return (
         <div>
             <input
+                className="input-element"
                 id="destinationUrl"
                 type="text"
                 value={inputValue}
@@ -39,10 +40,10 @@ export default function CreateShortLinkPage(): ReactElement {
                 onChange={handleChange}
             />
             <br/>
-            <button type="submit" onClick={handleSubmit}>Submit</button>
+            <button type="submit" onClick={handleSubmit}>Create Short Link</button>
             <br/>
-            {hashValue === undefined || hashValue?.length > 0 && (
-                <div>
+            {hashValue !== undefined && hashValue?.length > 0 && (
+                <div className="output-element">
                     <span> <a href={"http://localhost:5173/" + hashValue}
                               target="_blank">http://localhost:5173/{hashValue}</a> </span>
                 </div>
